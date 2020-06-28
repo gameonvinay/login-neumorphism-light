@@ -1,0 +1,22 @@
+{
+  "name": "login-neumorphism-light",
+  "version": "1.0.0",
+  "description": "A neumorphic login form light theme.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass main.scss style.css -w"
+  },
+  "keywords": [
+    "neumorphism login form beautiful",
+    "login form beautiful",
+    "login form",
+    "gameonvinay",
+    "www.gameondevs.com",
+    "beautiful login form"
+  ],
+  "author": "gameonvinay",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
