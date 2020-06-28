@@ -158,7 +158,8 @@ button {
   font-weight: 400;
   text-decoration: none; }
   .forgot-password:hover {
-    color: #6772e5; }
+    color: #6772e5;
+    text-decoration: underline; }
   .forgot-password:focus {
     border: 2px solid #ffffff;
     color: #6772e5; }
@@ -173,4 +174,14 @@ button {
   color: #3b3b3b; }
   .sign-up-link a {
     color: #6772e5;
-    font-weight: 700; }
+    font-weight: 500;
+    text-decoration: none; }
+    .sign-up-link a:hover {
+      color: #6772e5;
+      text-decoration: underline; }
+    .sign-up-link a:focus {
+      border: 2px solid #ffffff;
+      color: #6772e5; }
+    .sign-up-link a:active {
+      border: none;
+      color: #6772e5; }

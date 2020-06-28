@@ -209,6 +209,7 @@ button {
   text-decoration: none;
   &:hover {
     color: $color-blue;
+    text-decoration: underline;
   }
   &:focus {
     border: 2px solid $color-white;
@@ -227,6 +228,20 @@ button {
   color: #3b3b3b;
   a {
     color: $color-blue;
-    font-weight: 700;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+      color: $color-blue;
+      text-decoration: underline;
+    }
+    &:focus {
+      border: 2px solid $color-white;
+      color: $color-blue;
+    }
+    &:active {
+      border: none;
+      color: $color-blue;
+    }
   }
+  
 }
