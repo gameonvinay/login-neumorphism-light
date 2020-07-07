@@ -1,8 +1,8 @@
 $color-blue: #6772e5;
-$color-bg: #ebefff;
-$color-shadow: #c8cbd9;
+$color-bg: #dee1e1;
+$color-shadow:#bdbfbf;
 $color-white: #ffffff;
-$color-input: rgb(59, 59, 59);
+$color-input: #696969;
 
 *,
 *::after,
@@ -12,11 +12,15 @@ $color-input: rgb(59, 59, 59);
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   height: 100vh;
   width: 100vw;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-family: "Open sans", sans-serif;
+  font-size: 1.6rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -31,14 +35,14 @@ input,
 select,
 textarea,
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open sans", sans-serif;
 }
 
 .login-div {
   width: 380px;
   height: 700px;
   padding: 40px 35px 35px 35px;
-  border-radius: 40px;
+  border-radius: 2rem;
   background: $color-bg;
   box-shadow: 20px 20px 34px $color-shadow, -14px -14px 24px $color-white;
 }
@@ -198,12 +202,15 @@ button {
   border: none;
   margin-top: 30px;
   text-align: right;
+  color: $color-input;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .forgot-password {
   outline: none;
   border: none;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: $color-blue;
   font-weight: 400; 
   text-decoration: none;
