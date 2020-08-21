@@ -1,7 +1,7 @@
 $color-blue: #6772e5;
 $color-bg: #eef1fb;
-$color-shadow: #cacdd599;
-$color-white: #ffffff99;
+$color-shadow: #cacdd5;
+$color-white: #ffffff;
 $color-input: #696969;
 
 *,
@@ -49,10 +49,10 @@ button {
       1rem,
       20rem
     );
-  padding: 20px;
+  padding: 30px;
   border-radius: 2rem;
   background: $color-bg;
-  box-shadow: 20px 20px 40px $color-shadow, -20px -20px 40px $color-white;
+  box-shadow: 20px 20px 35px $color-shadow, -20px -20px 35px $color-white;
 }
 
 .logo {
@@ -76,7 +76,7 @@ button {
 
 .fields {
   width: 100%;
-  padding: 50px 5px 30px 5px;
+  padding: 50px 0 30px 0;
   input {
     width: 83%;
     border: none;
@@ -85,7 +85,7 @@ button {
     color: $color-input;
     font-size: 16px;
     font-weight: 700;
-    padding: 20px 5px 20px 5px;
+    padding: 20px 0 20px 0;
     text-shadow: 1px 1px 0 $color-white;
   }
   .svg-icon {
@@ -105,8 +105,8 @@ button {
     border-radius: 25px;
     background: $color-bg;
     border: 2px solid $color-bg;
-    box-shadow: inset 3px 3px 6px $color-shadow,
-      inset -5px -5px 10px $color-white;
+    box-shadow: inset 4px 4px 8px $color-shadow,
+      inset -4px -4px 8px $color-white;
     &:focus-within {
       border: 1px solid $color-blue;
     }
@@ -124,7 +124,7 @@ button {
     cursor: pointer;
     padding: 0;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   // Box.
@@ -133,8 +133,8 @@ button {
     margin-right: 10px;
     display: inline-block;
     vertical-align: text-top;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background: $color-bg;
     box-shadow: 3px 3px 5px $color-shadow, -3px -3px 5px $color-white;
     border-radius: 4px;
@@ -172,8 +172,8 @@ button {
   &:checked + label:after {
     content: "";
     position: absolute;
-    left: 3px;
-    top: 7px;
+    left: 5px;
+    top: 9px;
     background: white;
     width: 2px;
     height: 2px;

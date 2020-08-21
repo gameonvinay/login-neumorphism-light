@@ -37,10 +37,10 @@ button {
   display: grid;
   grid-template-columns: minmax(30rem, 42rem);
   grid-template-rows: minmax(2rem, 4rem) max-content max-content max-content max-content max-content max-content minmax(1rem, 20rem);
-  padding: 20px;
+  padding: 30px;
   border-radius: 2rem;
   background: #eef1fb;
-  box-shadow: 20px 20px 40px #cacdd599, -20px -20px 40px #ffffff99; }
+  box-shadow: 20px 20px 35px #cacdd5, -20px -20px 35px #ffffff; }
 
 .logo {
   width: 80px;
@@ -51,7 +51,7 @@ button {
   background-position: center;
   border-radius: 7px;
   margin: 0 auto;
-  box-shadow: 5px 5px 20px #cacdd599, -5px -5px 20px #ffffff99; }
+  box-shadow: 5px 5px 20px #cacdd5, -5px -5px 20px #ffffff; }
 
 .title {
   text-align: center;
@@ -61,7 +61,7 @@ button {
 
 .fields {
   width: 100%;
-  padding: 50px 5px 30px 5px; }
+  padding: 50px 0 30px 0; }
   .fields input {
     width: 83%;
     border: none;
@@ -70,8 +70,8 @@ button {
     color: #696969;
     font-size: 16px;
     font-weight: 700;
-    padding: 20px 5px 20px 5px;
-    text-shadow: 1px 1px 0 #ffffff99; }
+    padding: 20px 0 20px 0;
+    text-shadow: 1px 1px 0 #ffffff; }
   .fields .svg-icon {
     height: 22px; }
   .fields .email-icon {
@@ -85,7 +85,7 @@ button {
     border-radius: 25px;
     background: #eef1fb;
     border: 2px solid #eef1fb;
-    box-shadow: inset 3px 3px 6px #cacdd599, inset -5px -5px 10px #ffffff99; }
+    box-shadow: inset 4px 4px 8px #cacdd5, inset -4px -4px 8px #ffffff; }
     .fields .username:focus-within,
     .fields .password:focus-within {
       border: 1px solid #6772e5; }
@@ -100,22 +100,22 @@ button {
     cursor: pointer;
     padding: 0;
     font-size: 14px;
-    font-weight: 600; }
+    font-weight: 500; }
   .remember-me + label:before {
     content: "";
     margin-right: 10px;
     display: inline-block;
     vertical-align: text-top;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background: #eef1fb;
-    box-shadow: 3px 3px 5px #cacdd599, -3px -3px 5px #ffffff99;
+    box-shadow: 3px 3px 5px #cacdd5, -3px -3px 5px #ffffff;
     border-radius: 4px; }
   .remember-me:hover + label:before {
     background: #6772e5; }
   .remember-me:focus + label:before {
     background: #6772e5;
-    box-shadow: 3px 3px 5px #cacdd599, -3px -3px 5px #ffffff99; }
+    box-shadow: 3px 3px 5px #cacdd5, -3px -3px 5px #ffffff; }
   .remember-me:checked + label:before {
     background: #6772e5; }
   .remember-me:disabled + label {
@@ -127,8 +127,8 @@ button {
   .remember-me:checked + label:after {
     content: "";
     position: absolute;
-    left: 3px;
-    top: 7px;
+    left: 5px;
+    top: 9px;
     background: white;
     width: 2px;
     height: 2px;
@@ -149,7 +149,7 @@ button {
   text-align: center;
   background: #eef1fb;
   border: 1px solid #eef1fb;
-  box-shadow: 5px 5px 20px #cacdd599, -5px -5px 20px #ffffff99;
+  box-shadow: 5px 5px 20px #cacdd5, -5px -5px 20px #ffffff;
   transition: 0.2s; }
   .login-button:hover {
     /* box-shadow: -2px -2px 5px $color-shadow, 2px 2px 5px $color-white; */
@@ -158,7 +158,7 @@ button {
     border: 1px solid #eef1fb; }
   .login-button:active {
     border: 1px solid #eef1fb;
-    box-shadow: inset 4px 4px 8px #cacdd599, inset -4px -4px 8px #ffffff99; }
+    box-shadow: inset 4px 4px 8px #cacdd5, inset -4px -4px 8px #ffffff; }
 
 .forgot-pass-div {
   outline: none;
@@ -180,7 +180,7 @@ button {
     color: #6772e5;
     text-decoration: underline; }
   .forgot-password:focus {
-    border: 2px solid #ffffff99;
+    border: 2px solid #ffffff;
     color: #6772e5; }
   .forgot-password:active {
     border: none;
@@ -199,7 +199,7 @@ button {
       color: #6772e5;
       text-decoration: underline; }
     .sign-up-link a:focus {
-      border: 2px solid #ffffff99;
+      border: 2px solid #ffffff;
       color: #6772e5; }
     .sign-up-link a:active {
       border: none;
