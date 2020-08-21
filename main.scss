@@ -1,7 +1,7 @@
 $color-blue: #6772e5;
-$color-bg: #dee1e1;
-$color-shadow:#bdbfbf;
-$color-white: #ffffff;
+$color-bg: #eef1fb;
+$color-shadow: #cacdd599;
+$color-white: #ffffff99;
 $color-input: #696969;
 
 *,
@@ -17,7 +17,8 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 500px;
+  max-height: 900px;
   width: 100vw;
   font-family: "Open sans", sans-serif;
   font-size: 1.6rem;
@@ -25,7 +26,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   color: $color-blue;
   background: $color-bg;
 }
@@ -39,12 +39,20 @@ button {
 }
 
 .login-div {
-  width: 380px;
-  height: 700px;
-  padding: 40px 35px 35px 35px;
+  min-width: 310px;
+  max-width: 480px;
+  min-height: 500px;
+  max-height: 850px;
+  display: grid;
+  grid-template-columns: minmax(30rem, 42rem);
+  grid-template-rows: minmax(2rem, 4rem) max-content max-content max-content max-content max-content max-content minmax(
+      1rem,
+      20rem
+    );
+  padding: 20px;
   border-radius: 2rem;
   background: $color-bg;
-  box-shadow: 20px 20px 34px $color-shadow, -14px -14px 24px $color-white;
+  box-shadow: 20px 20px 40px $color-shadow, -20px -20px 40px $color-white;
 }
 
 .logo {
@@ -68,8 +76,9 @@ button {
 
 .fields {
   width: 100%;
-  padding: 75px 5px 5px 5px;
+  padding: 50px 5px 30px 5px;
   input {
+    width: 83%;
     border: none;
     outline: none;
     background: none;
@@ -81,6 +90,11 @@ button {
   }
   .svg-icon {
     height: 22px;
+  }
+  .email-icon {
+    margin: 0 0 -5px 20px;
+  }
+  .password-icon {
     margin: 0 0 -3px 20px;
   }
 
@@ -90,14 +104,15 @@ button {
     margin-bottom: 15px;
     border-radius: 25px;
     background: $color-bg;
+    border: 2px solid $color-bg;
     box-shadow: inset 3px 3px 6px $color-shadow,
       inset -5px -5px 10px $color-white;
     &:focus-within {
-      border: 2px solid $color-white;
+      border: 1px solid $color-blue;
     }
   }
   .password {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -168,12 +183,12 @@ button {
   }
 }
 
-.signin-button {
-  margin-top: 20px;
+.login-button {
+  margin: 20px 10px 0px 10px;
   border: none;
   outline: none;
   cursor: pointer;
-  width: 100%;
+  width: 95%;
   height: 60px;
   border-radius: 30px;
   font-size: 20px;
@@ -181,38 +196,41 @@ button {
   color: $color-blue;
   text-align: center;
   background: $color-bg;
+  border: 1px solid $color-bg;
   box-shadow: 5px 5px 20px $color-shadow, -5px -5px 20px $color-white;
   transition: 0.2s;
   &:hover {
-    box-shadow: -2px -2px 5px $color-shadow, 2px 2px 5px $color-white;
+    /* box-shadow: -2px -2px 5px $color-shadow, 2px 2px 5px $color-white; */
+    border: 1px solid $color-blue;
   }
 
   &:focus {
-    border: 2px solid $color-white;
+    border: 1px solid $color-bg;
   }
 
   &:active {
-    box-shadow: inset 1px 1px 2px $color-shadow,
-      inset -1px -1px 2px $color-white;
+    border: 1px solid $color-bg;
+    box-shadow: inset 4px 4px 8px $color-shadow,
+      inset -4px -4px 8px $color-white;
   }
 }
 
 .forgot-pass-div {
   outline: none;
   border: none;
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: right;
   color: $color-input;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
 .forgot-password {
   outline: none;
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: $color-blue;
-  font-weight: 400; 
+  font-weight: 400;
   text-decoration: none;
   &:hover {
     color: $color-blue;
@@ -250,5 +268,4 @@ button {
       color: $color-blue;
     }
   }
-  
 }

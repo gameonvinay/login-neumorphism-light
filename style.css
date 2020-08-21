@@ -9,7 +9,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  height: 100vh;
+  min-height: 500px;
+  max-height: 900px;
   width: 100vw;
   font-family: "Open sans", sans-serif;
   font-size: 1.6rem;
@@ -17,9 +18,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   color: #6772e5;
-  background: #dee1e1; }
+  background: #eef1fb; }
 
 body,
 p,
@@ -30,12 +30,17 @@ button {
   font-family: "Open sans", sans-serif; }
 
 .login-div {
-  width: 380px;
-  height: 700px;
-  padding: 40px 35px 35px 35px;
+  min-width: 310px;
+  max-width: 480px;
+  min-height: 500px;
+  max-height: 850px;
+  display: grid;
+  grid-template-columns: minmax(30rem, 42rem);
+  grid-template-rows: minmax(2rem, 4rem) max-content max-content max-content max-content max-content max-content minmax(1rem, 20rem);
+  padding: 20px;
   border-radius: 2rem;
-  background: #dee1e1;
-  box-shadow: 20px 20px 34px #bdbfbf, -14px -14px 24px #ffffff; }
+  background: #eef1fb;
+  box-shadow: 20px 20px 40px #cacdd599, -20px -20px 40px #ffffff99; }
 
 .logo {
   width: 80px;
@@ -46,7 +51,7 @@ button {
   background-position: center;
   border-radius: 7px;
   margin: 0 auto;
-  box-shadow: 5px 5px 20px #bdbfbf, -5px -5px 20px #ffffff; }
+  box-shadow: 5px 5px 20px #cacdd599, -5px -5px 20px #ffffff99; }
 
 .title {
   text-align: center;
@@ -56,8 +61,9 @@ button {
 
 .fields {
   width: 100%;
-  padding: 75px 5px 5px 5px; }
+  padding: 50px 5px 30px 5px; }
   .fields input {
+    width: 83%;
     border: none;
     outline: none;
     background: none;
@@ -65,22 +71,26 @@ button {
     font-size: 16px;
     font-weight: 700;
     padding: 20px 5px 20px 5px;
-    text-shadow: 1px 1px 0 #ffffff; }
+    text-shadow: 1px 1px 0 #ffffff99; }
   .fields .svg-icon {
-    height: 22px;
+    height: 22px; }
+  .fields .email-icon {
+    margin: 0 0 -5px 20px; }
+  .fields .password-icon {
     margin: 0 0 -3px 20px; }
   .fields .username,
   .fields .password {
     outline: none;
     margin-bottom: 15px;
     border-radius: 25px;
-    background: #dee1e1;
-    box-shadow: inset 3px 3px 6px #bdbfbf, inset -5px -5px 10px #ffffff; }
+    background: #eef1fb;
+    border: 2px solid #eef1fb;
+    box-shadow: inset 3px 3px 6px #cacdd599, inset -5px -5px 10px #ffffff99; }
     .fields .username:focus-within,
     .fields .password:focus-within {
-      border: 2px solid #ffffff; }
+      border: 1px solid #6772e5; }
   .fields .password {
-    margin-bottom: 30px; }
+    margin-bottom: 10px; }
 
 .remember-me {
   position: absolute;
@@ -98,14 +108,14 @@ button {
     vertical-align: text-top;
     width: 16px;
     height: 16px;
-    background: #dee1e1;
-    box-shadow: 3px 3px 5px #bdbfbf, -3px -3px 5px #ffffff;
+    background: #eef1fb;
+    box-shadow: 3px 3px 5px #cacdd599, -3px -3px 5px #ffffff99;
     border-radius: 4px; }
   .remember-me:hover + label:before {
     background: #6772e5; }
   .remember-me:focus + label:before {
     background: #6772e5;
-    box-shadow: 3px 3px 5px #bdbfbf, -3px -3px 5px #ffffff; }
+    box-shadow: 3px 3px 5px #cacdd599, -3px -3px 5px #ffffff99; }
   .remember-me:checked + label:before {
     background: #6772e5; }
   .remember-me:disabled + label {
@@ -125,41 +135,44 @@ button {
     box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
     transform: rotate(45deg); }
 
-.signin-button {
-  margin-top: 20px;
+.login-button {
+  margin: 20px 10px 0px 10px;
   border: none;
   outline: none;
   cursor: pointer;
-  width: 100%;
+  width: 95%;
   height: 60px;
   border-radius: 30px;
   font-size: 20px;
   font-weight: 700;
   color: #6772e5;
   text-align: center;
-  background: #dee1e1;
-  box-shadow: 5px 5px 20px #bdbfbf, -5px -5px 20px #ffffff;
+  background: #eef1fb;
+  border: 1px solid #eef1fb;
+  box-shadow: 5px 5px 20px #cacdd599, -5px -5px 20px #ffffff99;
   transition: 0.2s; }
-  .signin-button:hover {
-    box-shadow: -2px -2px 5px #bdbfbf, 2px 2px 5px #ffffff; }
-  .signin-button:focus {
-    border: 2px solid #ffffff; }
-  .signin-button:active {
-    box-shadow: inset 1px 1px 2px #bdbfbf, inset -1px -1px 2px #ffffff; }
+  .login-button:hover {
+    /* box-shadow: -2px -2px 5px $color-shadow, 2px 2px 5px $color-white; */
+    border: 1px solid #6772e5; }
+  .login-button:focus {
+    border: 1px solid #eef1fb; }
+  .login-button:active {
+    border: 1px solid #eef1fb;
+    box-shadow: inset 4px 4px 8px #cacdd599, inset -4px -4px 8px #ffffff99; }
 
 .forgot-pass-div {
   outline: none;
   border: none;
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: right;
   color: #696969;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400; }
 
 .forgot-password {
   outline: none;
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #6772e5;
   font-weight: 400;
   text-decoration: none; }
@@ -167,7 +180,7 @@ button {
     color: #6772e5;
     text-decoration: underline; }
   .forgot-password:focus {
-    border: 2px solid #ffffff;
+    border: 2px solid #ffffff99;
     color: #6772e5; }
   .forgot-password:active {
     border: none;
@@ -186,7 +199,7 @@ button {
       color: #6772e5;
       text-decoration: underline; }
     .sign-up-link a:focus {
-      border: 2px solid #ffffff;
+      border: 2px solid #ffffff99;
       color: #6772e5; }
     .sign-up-link a:active {
       border: none;
